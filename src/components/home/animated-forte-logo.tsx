@@ -18,10 +18,10 @@ export function AnimatedForteLogo({ className }: { className?: string }) {
         className="w-full h-full"
       >
         <Image
-          src="/forteSVG.svg"
+          src="/logo.png"
           alt=""
-          width={900}
-          height={636}
+          width={600}
+          height={600}
           className="w-full h-full object-contain"
           style={{ mixBlendMode: "multiply" }}
           priority

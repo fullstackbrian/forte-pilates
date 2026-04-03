@@ -22,8 +22,8 @@ export function Hero() {
       />
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gold/[0.03] rounded-full blur-[150px]" />
 
-      {/* Animated SVG logo mark — centered watermark */}
-      <AnimatedForteLogo className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(90vw,660px)] opacity-[0.13] pointer-events-none select-none" />
+      {/* Animated logo mark — right side, partially cropped */}
+      <AnimatedForteLogo className="absolute -right-32 top-1/2 -translate-y-1/2 w-[520px] opacity-[0.08] pointer-events-none select-none hidden sm:block" />
 
       {/* Floating lines */}
       <motion.div
