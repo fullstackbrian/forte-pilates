@@ -1,8 +1,16 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 
 export function AnimatedForteLogo({ className }: { className?: string }) {
   return (
-    <div className={className}>
+    <motion.div
+      className={className}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+    >
       <Image
         src="/forteSVG.svg"
         alt="Forte Pilates"
@@ -12,6 +20,6 @@ export function AnimatedForteLogo({ className }: { className?: string }) {
         style={{ mixBlendMode: "multiply" }}
         priority
       />
-    </div>
+    </motion.div>
   );
 }
