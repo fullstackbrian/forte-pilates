@@ -15,8 +15,7 @@ export function Footer() {
               {SITE.name}
             </p>
             <p className="text-sm leading-[1.8] max-w-sm text-charcoal/50">
-              A boutique Pilates studio in the heart of{" "}
-              {SITE.address.neighborhood}, Los Angeles. Where precision meets
+              A boutique Pilates studio in Los Angeles. Where precision meets
               creativity.
             </p>
             <div className="flex gap-6 mt-6">
