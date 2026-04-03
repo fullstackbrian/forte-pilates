@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_LINKS, SITE } from "@/lib/constants";
 import { NavLink } from "./nav-link";
 import { MobileNav } from "./mobile-nav";
@@ -9,11 +10,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-cream/85 backdrop-blur-2xl border-b border-brown/[0.05]">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 flex items-center justify-between h-[76px]">
-        <Link
-          href="/"
-          className="font-forum text-lg tracking-[0.3em] uppercase text-charcoal hover:text-brown transition-colors duration-500"
-        >
-          {SITE.name}
+        <Link href="/" className="flex items-center hover:opacity-75 transition-opacity duration-500">
+          <Image
+            src="/logo.png"
+            alt={SITE.name}
+            width={44}
+            height={44}
+            className="object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
