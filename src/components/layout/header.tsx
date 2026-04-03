@@ -10,16 +10,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-cream/85 backdrop-blur-2xl border-b border-brown/[0.05]">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 flex items-center justify-between h-[76px]">
-        <Link href="/" className="flex items-center hover:opacity-60 transition-opacity duration-500">
-          <Image
-            src="/font.jpg"
-            alt={SITE.name}
-            width={160}
-            height={40}
-            className="h-8 w-auto object-contain"
-            style={{ mixBlendMode: "multiply" }}
-            priority
-          />
+        <Link
+          href="/"
+          className="font-forum text-lg tracking-[0.3em] uppercase text-charcoal hover:text-brown transition-colors duration-500"
+        >
+          {SITE.name}
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
